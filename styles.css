@@ -52,9 +52,10 @@ header a:hover {
 
 /* ==== SECCIONES ==== */
 section {
-  padding: 70px 8% 55px;
+  width: 100%;
+  padding: 50px 8% 40px;
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(30px);
   transition: all 0.7s ease-out;
 }
 
@@ -136,7 +137,7 @@ footer {
   }
 
   section {
-    padding: 65px 6% 45px;
+    padding: 45px 6% 35px;
   }
 
   h2 {
@@ -159,7 +160,7 @@ footer {
   }
 
   section {
-    padding: 60px 5% 40px;
+    padding: 40px 5% 30px;
   }
 
   .tech-list {
