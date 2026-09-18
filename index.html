@@ -3,136 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Santiago Castañares | Desarrollador Web &amp; Mobile</title>
+  <title data-i18n="meta.title">Santiago Castañares | Desarrollador Web &amp; Mobile</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="header-inner">
       <h1>Santiago Castañares</h1>
-      <a href="CV_Santiago_Castañares.pdf" download>Descargar CV</a>
+      <div class="header-actions">
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch language / Cambiar idioma">
+          <span class="lang-option" data-lang-option="es">ES</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-option" data-lang-option="en">EN</span>
+        </button>
+        <a href="CV_Santiago_Castañares.pdf" download id="cv-download" data-i18n="header.downloadCv">Descargar CV</a>
+      </div>
     </div>
   </header>
 
   <section class="about">
-    <h2>Sobre mí</h2>
-    <p>Desarrollador apasionado por crear aplicaciones mobile de alto impacto, con experiencia sólida en Flutter, React y Android nativo. Especializado en Kotlin y arquitecturas modernas. Busco seguir creciendo en un entorno colaborativo y desafiante, aportando conocimientos técnicos y capacidad de resolución de problemas.</p>
+    <h2 data-i18n="about.heading">Sobre mí</h2>
+    <p data-i18n="about.text">Desarrollador apasionado por crear aplicaciones mobile de alto impacto, con experiencia sólida en Flutter, React y Android nativo. Especializado en Kotlin y arquitecturas modernas. Busco seguir creciendo en un entorno colaborativo y desafiante, aportando conocimientos técnicos y capacidad de resolución de problemas.</p>
   </section>
 
   <section class="experience">
-    <h2>Experiencia profesional</h2>
+    <h2 data-i18n="experience.heading">Experiencia profesional</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <span class="timeline-date">Febrero 2026 — Actualidad</span>
-        <h3>Desarrollador Android (Kotlin)</h3>
+        <span class="timeline-date" data-i18n="exp1.date">Febrero 2026 — Actualidad</span>
+        <h3 data-i18n="exp1.role">Desarrollador Android (Kotlin)</h3>
         <p class="timeline-company">SolidaTec</p>
-        <p>Desarrollo de aplicaciones Android nativas con Kotlin, utilizando Jetpack Compose y XML, y desarrollo multiplataforma con Kotlin Multiplatform (KMP) y Compose Multiplatform. Implementación de patrones arquitectónicos MVVM, MVP y MVI, consumo de webservices RESTful, persistencia de datos con Room y SQLite, y manejo avanzado de Coroutines y Flows.</p>
+        <p data-i18n="exp1.desc">Desarrollo de aplicaciones Android nativas con Kotlin, utilizando Jetpack Compose y XML, y desarrollo multiplataforma con Kotlin Multiplatform (KMP) y Compose Multiplatform. Implementación de patrones arquitectónicos MVVM, MVP y MVI, consumo de webservices RESTful, persistencia de datos con Room y SQLite, y manejo avanzado de Coroutines y Flows.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <span class="timeline-date">2023 — Febrero 2026</span>
-        <h3>Desarrollador Front-End Flutter</h3>
+        <span class="timeline-date" data-i18n="exp2.date">2023 — Febrero 2026</span>
+        <h3 data-i18n="exp2.role">Desarrollador Front-End Flutter</h3>
         <p class="timeline-company">IntegralSoft</p>
-        <p>Desarrollo web y mobile multiplataforma con Flutter, testing de APIs y validación de endpoints con Postman, e implementación de interfaces responsivas y de alto rendimiento.</p>
+        <p data-i18n="exp2.desc">Desarrollo web y mobile multiplataforma con Flutter, testing de APIs y validación de endpoints con Postman, e implementación de interfaces responsivas y de alto rendimiento.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <span class="timeline-date">2023</span>
-        <h3>Sport Analyst</h3>
+        <span class="timeline-date" data-i18n="exp3.date">2023</span>
+        <h3 data-i18n="exp3.role">Sport Analyst</h3>
         <p class="timeline-company">Sportradar</p>
-        <p>Recopilación y análisis de datos deportivos, utilizando modelos predictivos para análisis avanzados.</p>
+        <p data-i18n="exp3.desc">Recopilación y análisis de datos deportivos, utilizando modelos predictivos para análisis avanzados.</p>
       </div>
     </div>
   </section>
 
   <section class="education">
-    <h2>Formación académica</h2>
+    <h2 data-i18n="education.heading">Formación académica</h2>
     <ul>
-      <li>Analista en Tecnologías de la Información — Universidad ORT (2025)</li>
-      <li>React — CoderHouse (2025)</li>
-      <li>Backend Node.js/Express y MongoDB — CoderHouse (2025)</li>
-      <li>JavaScript — CoderHouse (2023)</li>
-      <li>Desarrollo Web — CoderHouse (2023)</li>
-      <li>Tecnicatura en Gestión de Soporte IT — Instituto BIOS (2022-2023)</li>
-      <li>Licenciatura en Sistemas — Universidad ORT (2022)</li>
+      <li data-i18n="education.item1">Analista en Tecnologías de la Información — Universidad ORT (2025)</li>
+      <li data-i18n="education.item2">React — CoderHouse (2025)</li>
+      <li data-i18n="education.item3">Backend Node.js/Express y MongoDB — CoderHouse (2025)</li>
+      <li data-i18n="education.item4">JavaScript — CoderHouse (2023)</li>
+      <li data-i18n="education.item5">Desarrollo Web — CoderHouse (2023)</li>
+      <li data-i18n="education.item6">Tecnicatura en Gestión de Soporte IT — Instituto BIOS (2022-2023)</li>
+      <li data-i18n="education.item7">Licenciatura en Sistemas — Universidad ORT (2022)</li>
     </ul>
   </section>
 
   <section class="projects">
-    <h2>Proyectos destacados</h2>
+    <h2 data-i18n="projects.heading">Proyectos destacados</h2>
     <div class="card">
-      <h3>CRM Empresarial</h3>
-      <p>Desarrollo de un sistema de gestión de clientes interno utilizando Flutter Web y API REST, con enfoque en rendimiento y usabilidad.</p>
+      <h3 data-i18n="project.crm.title">CRM Empresarial</h3>
+      <p data-i18n="project.crm.desc">Desarrollo de un sistema de gestión de clientes interno utilizando Flutter Web y API REST, con enfoque en rendimiento y usabilidad.</p>
       <div class="carousel" data-carousel>
         <div class="carousel-track">
-          <figure class="carousel-slide"><img src="assets/screenshots/crm/login_screen.png" alt="CRM - Inicio de sesión" loading="lazy"><figcaption>Inicio de sesión</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/crm/dashboard_screen.png" alt="CRM - Dashboard" loading="lazy"><figcaption>Dashboard</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/crm/ventas_lista_screen.png" alt="CRM - Listado de ventas" loading="lazy"><figcaption>Listado de ventas</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/crm/entidad_detalle_screen.png" alt="CRM - Detalle de entidad" loading="lazy"><figcaption>Detalle de entidad</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/crm/categorias_screen.png" alt="CRM - Categorías" loading="lazy"><figcaption>Categorías</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/crm/login_screen.png" data-i18n-alt="project.crm.alt1" alt="CRM - Inicio de sesión" loading="lazy"><figcaption data-i18n="project.crm.cap1">Inicio de sesión</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/crm/dashboard_screen.png" data-i18n-alt="project.crm.alt2" alt="CRM - Dashboard" loading="lazy"><figcaption data-i18n="project.crm.cap2">Dashboard</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/crm/ventas_lista_screen.png" data-i18n-alt="project.crm.alt3" alt="CRM - Listado de ventas" loading="lazy"><figcaption data-i18n="project.crm.cap3">Listado de ventas</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/crm/entidad_detalle_screen.png" data-i18n-alt="project.crm.alt4" alt="CRM - Detalle de entidad" loading="lazy"><figcaption data-i18n="project.crm.cap4">Detalle de entidad</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/crm/categorias_screen.png" data-i18n-alt="project.crm.alt5" alt="CRM - Categorías" loading="lazy"><figcaption data-i18n="project.crm.cap5">Categorías</figcaption></figure>
         </div>
-        <button type="button" class="carousel-btn prev" aria-label="Captura anterior">&#10094;</button>
-        <button type="button" class="carousel-btn next" aria-label="Captura siguiente">&#10095;</button>
+        <button type="button" class="carousel-btn prev" data-i18n-aria="aria.carouselPrev" aria-label="Captura anterior">&#10094;</button>
+        <button type="button" class="carousel-btn next" data-i18n-aria="aria.carouselNext" aria-label="Captura siguiente">&#10095;</button>
         <div class="carousel-dots"></div>
       </div>
     </div>
     <div class="card">
       <h3>WMS (Warehouse Management System)</h3>
-      <p>Implementación de una aplicación multiplataforma para control de stock, picking y gestión de almacenes.</p>
+      <p data-i18n="project.wms.desc">Implementación de una aplicación multiplataforma para control de stock, picking y gestión de almacenes.</p>
       <div class="carousel" data-carousel>
         <div class="carousel-track">
-          <figure class="carousel-slide"><img src="assets/screenshots/deposito/login.png" alt="WMS - Inicio de sesión" loading="lazy"><figcaption>Inicio de sesión</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/deposito/seleccion_almacen.png" alt="WMS - Selección de almacén" loading="lazy"><figcaption>Selección de almacén</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/deposito/inventario.png" alt="WMS - Inventario" loading="lazy"><figcaption>Inventario</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/deposito/monitor.png" alt="WMS - Monitor de órdenes" loading="lazy"><figcaption>Monitor de órdenes</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/deposito/picking.png" alt="WMS - Picking" loading="lazy"><figcaption>Picking</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/deposito/login.png" data-i18n-alt="project.wms.alt1" alt="WMS - Inicio de sesión" loading="lazy"><figcaption data-i18n="project.wms.cap1">Inicio de sesión</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/deposito/seleccion_almacen.png" data-i18n-alt="project.wms.alt2" alt="WMS - Selección de almacén" loading="lazy"><figcaption data-i18n="project.wms.cap2">Selección de almacén</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/deposito/inventario.png" data-i18n-alt="project.wms.alt3" alt="WMS - Inventario" loading="lazy"><figcaption data-i18n="project.wms.cap3">Inventario</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/deposito/monitor.png" data-i18n-alt="project.wms.alt4" alt="WMS - Monitor de órdenes" loading="lazy"><figcaption data-i18n="project.wms.cap4">Monitor de órdenes</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/deposito/picking.png" data-i18n-alt="project.wms.alt5" alt="WMS - Picking" loading="lazy"><figcaption data-i18n="project.wms.cap5">Picking</figcaption></figure>
         </div>
-        <button type="button" class="carousel-btn prev" aria-label="Captura anterior">&#10094;</button>
-        <button type="button" class="carousel-btn next" aria-label="Captura siguiente">&#10095;</button>
+        <button type="button" class="carousel-btn prev" data-i18n-aria="aria.carouselPrev" aria-label="Captura anterior">&#10094;</button>
+        <button type="button" class="carousel-btn next" data-i18n-aria="aria.carouselNext" aria-label="Captura siguiente">&#10095;</button>
         <div class="carousel-dots"></div>
       </div>
     </div>
     <div class="card">
-      <h3>Portal de Clientes</h3>
-      <p>Desarrollo de una plataforma de acceso para clientes con autenticación, panel de información personalizada y comunicación directa con la empresa.</p>
+      <h3 data-i18n="project.portal.title">Portal de Clientes</h3>
+      <p data-i18n="project.portal.desc">Desarrollo de una plataforma de acceso para clientes con autenticación, panel de información personalizada y comunicación directa con la empresa.</p>
     </div>
     <div class="card">
-      <h3>GlutenHub <span class="badge">En desarrollo</span></h3>
-      <p>App para encontrar comercios aptos para celíacos, con reseñas de la comunidad, favoritos y panel para dueños de negocio. Cliente Flutter + backend NestJS.</p>
+      <h3>GlutenHub <span class="badge" data-i18n="badge.inProgress">En desarrollo</span></h3>
+      <p data-i18n="project.glutenhub.desc">App para encontrar comercios aptos para celíacos, con reseñas de la comunidad, favoritos y panel para dueños de negocio. Cliente Flutter + backend NestJS.</p>
       <div class="carousel" data-carousel>
         <div class="carousel-track">
-          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/01_onboarding_welcome.png" alt="GlutenHub - Onboarding, bienvenida" loading="lazy"><figcaption>Onboarding: bienvenida</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/02_onboarding_safety.png" alt="GlutenHub - Onboarding, seguridad alimentaria" loading="lazy"><figcaption>Onboarding: seguridad alimentaria</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/03_login_screen.png" alt="GlutenHub - Inicio de sesión" loading="lazy"><figcaption>Inicio de sesión</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/04_register_screen.png" alt="GlutenHub - Registro" loading="lazy"><figcaption>Registro</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/01_onboarding_welcome.png" data-i18n-alt="project.glutenhub.alt1" alt="GlutenHub - Onboarding, bienvenida" loading="lazy"><figcaption data-i18n="project.glutenhub.cap1">Onboarding: bienvenida</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/02_onboarding_safety.png" data-i18n-alt="project.glutenhub.alt2" alt="GlutenHub - Onboarding, seguridad alimentaria" loading="lazy"><figcaption data-i18n="project.glutenhub.cap2">Onboarding: seguridad alimentaria</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/03_login_screen.png" data-i18n-alt="project.glutenhub.alt3" alt="GlutenHub - Inicio de sesión" loading="lazy"><figcaption data-i18n="project.glutenhub.cap3">Inicio de sesión</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/glutenhub/04_register_screen.png" data-i18n-alt="project.glutenhub.alt4" alt="GlutenHub - Registro" loading="lazy"><figcaption data-i18n="project.glutenhub.cap4">Registro</figcaption></figure>
         </div>
-        <button type="button" class="carousel-btn prev" aria-label="Captura anterior">&#10094;</button>
-        <button type="button" class="carousel-btn next" aria-label="Captura siguiente">&#10095;</button>
+        <button type="button" class="carousel-btn prev" data-i18n-aria="aria.carouselPrev" aria-label="Captura anterior">&#10094;</button>
+        <button type="button" class="carousel-btn next" data-i18n-aria="aria.carouselNext" aria-label="Captura siguiente">&#10095;</button>
         <div class="carousel-dots"></div>
       </div>
     </div>
     <div class="card">
-      <h3>Smart Finance App</h3>
-      <p>App de finanzas personales para registrar gastos, tarjetas y metas de ahorro, con cliente Flutter multiplataforma y backend propio en Node.js/Express con PostgreSQL.</p>
+      <h3 data-i18n="project.finance.title">Smart Finance App</h3>
+      <p data-i18n="project.finance.desc">App de finanzas personales para registrar gastos, tarjetas y metas de ahorro, con cliente Flutter multiplataforma y backend propio en Node.js/Express con PostgreSQL.</p>
       <div class="carousel" data-carousel>
         <div class="carousel-track">
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/login_screen.png" alt="Smart Finance App - Inicio de sesión" loading="lazy"><figcaption>Inicio de sesión</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/expenses_list_screen.png" alt="Smart Finance App - Listado de gastos" loading="lazy"><figcaption>Listado de gastos</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/add_edit_expense_screen.png" alt="Smart Finance App - Agregar gasto" loading="lazy"><figcaption>Agregar gasto</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/cards_list_screen.png" alt="Smart Finance App - Tarjetas" loading="lazy"><figcaption>Tarjetas</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/goals_list_screen.png" alt="Smart Finance App - Metas de ahorro" loading="lazy"><figcaption>Metas de ahorro</figcaption></figure>
-          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/profile_screen.png" alt="Smart Finance App - Perfil" loading="lazy"><figcaption>Perfil</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/login_screen.png" data-i18n-alt="project.finance.alt1" alt="Smart Finance App - Inicio de sesión" loading="lazy"><figcaption data-i18n="project.finance.cap1">Inicio de sesión</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/expenses_list_screen.png" data-i18n-alt="project.finance.alt2" alt="Smart Finance App - Listado de gastos" loading="lazy"><figcaption data-i18n="project.finance.cap2">Listado de gastos</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/add_edit_expense_screen.png" data-i18n-alt="project.finance.alt3" alt="Smart Finance App - Agregar gasto" loading="lazy"><figcaption data-i18n="project.finance.cap3">Agregar gasto</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/cards_list_screen.png" data-i18n-alt="project.finance.alt4" alt="Smart Finance App - Tarjetas" loading="lazy"><figcaption data-i18n="project.finance.cap4">Tarjetas</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/goals_list_screen.png" data-i18n-alt="project.finance.alt5" alt="Smart Finance App - Metas de ahorro" loading="lazy"><figcaption data-i18n="project.finance.cap5">Metas de ahorro</figcaption></figure>
+          <figure class="carousel-slide"><img src="assets/screenshots/smart-finance/profile_screen.png" data-i18n-alt="project.finance.alt6" alt="Smart Finance App - Perfil" loading="lazy"><figcaption data-i18n="project.finance.cap6">Perfil</figcaption></figure>
         </div>
-        <button type="button" class="carousel-btn prev" aria-label="Captura anterior">&#10094;</button>
-        <button type="button" class="carousel-btn next" aria-label="Captura siguiente">&#10095;</button>
+        <button type="button" class="carousel-btn prev" data-i18n-aria="aria.carouselPrev" aria-label="Captura anterior">&#10094;</button>
+        <button type="button" class="carousel-btn next" data-i18n-aria="aria.carouselNext" aria-label="Captura siguiente">&#10095;</button>
         <div class="carousel-dots"></div>
       </div>
     </div>
   </section>
 
   <section class="tech">
-    <h2>Tecnologías</h2>
+    <h2 data-i18n="tech.heading">Tecnologías</h2>
     <div class="tech-list">
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 24H0V0h24L12 12Z"/></svg>Kotlin</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z"/></svg>Dart</span>
@@ -156,7 +163,7 @@
   </section>
 
   <section class="contact">
-    <h2>Contacto</h2>
+    <h2 data-i18n="contact.heading">Contacto</h2>
     <p>📧 <a href="mailto:santicg01@gmail.com" class="contact-link">santicg01@gmail.com</a></p>
     <p>📱 +598 98 372 886</p>
     <p>📍 Montevideo, Uruguay</p>
@@ -164,7 +171,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Santiago Castañares — Desarrollador Web &amp; Mobile</p>
+    <p data-i18n="footer.text">© 2026 Santiago Castañares — Desarrollador Web &amp; Mobile</p>
   </footer>
 
   <script src="script.js"></script>
